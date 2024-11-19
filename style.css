@@ -51,7 +51,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    .landing .bolas ul{
+    /* .landing .bolas ul{
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -75,8 +75,32 @@
     }
     .bolas ul li:hover{
         background-color: rgb(55, 16, 230);
+    } */
+
+    .seta img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        float: right;
+        right: 15%;
+        top: 100px;
+        cursor: pointer;
     }
 
 
-
 /*FINAL DA LANDING*/
+
+/*COMEÇO DA ESTILIZAÇÃO DAS COLUNAS*/
+.corpo{
+    text-align: center;
+}
+.colunas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    text-align: center;
+}
+.corpo{
+
+}
