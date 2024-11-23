@@ -11,6 +11,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 200;
+    max-width: 100%;
 
 }
 
@@ -45,6 +46,7 @@ body {
     color: black;
     font-size: 18px;
     color: blue;
+    font-weight: 400;
 }
 
 .menuSup ul li a:hover {
@@ -125,7 +127,6 @@ body {
     border-bottom: solid 1px black;
 }
 .colunas .c1 , .c2 , .c3{
-    border: solid 1px blue;
     margin: 0 5px;
 }
 .colunas h2 {
@@ -145,25 +146,30 @@ body {
     width: 100%;
     height: 500px;
     display: inline-block;
+    border: solid 1px rgb(9, 9, 196);
 }
 
 .history #col1 {
-    width: 50%;
+    width: 40%;
     height: 200px;
-    background-image: url(imagens/campelo.jpg);
+    margin-left: 5%;
+    background: grey;
     margin-top: 2%;
     border-radius: 50px;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    border: solid 1px rgb(199, 24, 155);
 }
 
 .history #col2 {
-    width: 50%;
+    width: 40%;
     height: 200px;
+    margin-left: 5%;
     background-color: grey;
     margin-top: 2%;
     border-radius: 50px;
+    border: solid 1px rgb(194, 9, 9);
 
 }
 
@@ -181,7 +187,7 @@ body {
 
 .history h3 {
     position: absolute;
-    z-index: 1;
-    margin-left: 72%;
-    margin-top: -32%;
+    margin-left: 70%;
+    margin-top: 10px;
+    color: blue;
 }
