@@ -21,7 +21,33 @@ body {
     width: 100%;
     height: 100px;
     padding-top: 1%;
+    margin-bottom: 2%;
     font-size: 23px;
+    display: flex;
+    flex-direction: row;
+}
+
+.topo h1 {
+    font-size: 40px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #0063CF;
+}
+
+.topo #logotop {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 35px;
+    margin-top: 1%;
+}
+
+.topo #logotop img {
+    width: 80px;
+    height: 80px;
 }
 
 /*FINAL DA ESTILIZAÇÃO DA LOGO*/
@@ -45,7 +71,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    color: blue;
+    color: #0063CF;
     font-weight: 400;
 }
 
@@ -58,7 +84,6 @@ body {
 
 /*COMEÇO DA LANDING*/
 .landing {
-    max-width: 1400px;
     width: 100%;
     height: 350px;
     margin-top: 5%;
@@ -113,8 +138,13 @@ body {
 }
 
 .corpo h1 {
-    font-size: 50px;
-    font-family: tahoma;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 5%;
+    color: #0063CF;
+
 }
 
 .colunas {
@@ -123,14 +153,18 @@ body {
     flex-direction: row;
     margin-top: 100px;
     text-align: center;
-    height: 400px;
-    border-bottom: solid 1px black;
+    height: 350px;
 }
-.colunas .c1 , .c2 , .c3{
+
+.colunas .c1,
+.c2,
+.c3 {
     margin: 0 5px;
 }
+
 .colunas h2 {
     margin-bottom: 20px;
+    color: #0063CF;
 }
 
 .colunas img {
@@ -146,30 +180,35 @@ body {
     width: 100%;
     height: 500px;
     display: inline-block;
-    border: solid 1px rgb(9, 9, 196);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .history #col1 {
-    width: 40%;
-    height: 200px;
+    width: 35%;
+    height: 160px;
     margin-left: 5%;
-    background: grey;
+    background-image: url(imagens/cartao.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
     margin-top: 2%;
-    border-radius: 50px;
+    border-radius: 0 50px 0 50px;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    border: solid 1px rgb(199, 24, 155);
 }
 
 .history #col2 {
-    width: 40%;
-    height: 200px;
+    width: 35%;
+    height: 160px;
     margin-left: 5%;
-    background-color: grey;
+    background-image: url(imagens/banner_trabalhe.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
     margin-top: 2%;
-    border-radius: 50px;
-    border: solid 1px rgb(194, 9, 9);
+    border-radius: 0 50px 0 50px;
 
 }
 
@@ -179,15 +218,96 @@ body {
     background-color: grey;
     position: relative;
     float: right;
-    top: -80%;
-    right: 5%;
+    top: -60%;
+    right: 9%;
     border-radius: 3%;
     box-shadow: 3px 5px 6px 3px black;
 }
 
 .history h3 {
     position: absolute;
-    margin-left: 70%;
-    margin-top: 10px;
-    color: blue;
+    margin-left: 65%;
+    margin-top: 25px;
+    color: #0063CF;
+}
+
+/*AQUI FINALIZOU A ESTILIZAÇÃO DO HISTORY*/
+
+.receitas {
+    width: 100%;
+    height: 700px;
+}
+
+.receitas h1 {
+    color: #0063CF;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.receitas ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.receitas li {
+    width: 50%;
+    height: 260px;
+    margin: 2% 2%;
+    list-style: none;
+}
+
+.receitas a {
+    text-decoration: none;
+}
+
+.receitas a img {
+    width: 100%;
+    height: 130px;
+}
+
+.receitas ul li h3 {
+    margin-top: 5px;
+    text-align: center;
+    color: #0063CF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.receitas ul li input[type=button] {
+    margin-top: 30px;
+    width: 40%;
+    height: 40px;
+    background-color: #0063CF;
+    color: white;
+    cursor: pointer;
+}
+
+.quadrosreceitas {
+    width: 80%;
+}
+
+/*Aqui finaliza a estilização das receitas*/
+.redes {
+    width: 80%;
+    height: 600px;
+    border: solid 1px black;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+.redessociais{
+    width: calc(100%/3);
+    margin-right: 5%;
+    border: solid 1px red;
+}
+.menuinf{
+    margin-right: 5%;
+    width: calc(100%/3);
+}
+.aplicativos{
+    width: calc(100%/3);
 }
